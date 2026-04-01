@@ -233,10 +233,7 @@ fn main() {
                     Ok((resp, data)) => {
                         if resp.is_success() && !data.is_empty() {
                             match fs::write(&local, &data) {
-                                Ok(_) => println!(
-                                    "Başarılı. {} byte indirildi.",
-                                    data.len()
-                                ),
+                                Ok(_) => println!("Başarılı. {} byte indirildi.", data.len()),
                                 Err(e) => println!("Dosya yazma hatası: {}", e),
                             }
                         } else if !resp.is_success() {
