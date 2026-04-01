@@ -1,0 +1,7 @@
+[package]
+name = "ftp-client"
+version = "0.1.0"
+edition = "2021"
+description = "A simple FTP client written in Rust"
+
+[dependencies]
